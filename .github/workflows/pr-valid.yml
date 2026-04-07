@@ -5,14 +5,11 @@ on:
     branches:
       - main
 
-
 jobs:
   validate:
-  runs-on: ubuntu-latest
-
-  steps:
-    - name: Checkout code
-      uses: actions/checkout
-
-    - name: Print PR validataion
-      run: echo "PR validation triggered"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Print PR validation
+        run: echo "PR validation triggered"
